@@ -10,8 +10,18 @@ Console.WriteLine ("Введите число A");
 int num1 = Convert.ToInt32 (Console.ReadLine());
 Console.WriteLine ("Введите число B");
 int num2 = Convert.ToInt32 (Console.ReadLine());
+int exponent = 1;
+int exponention = Exponention (exponent, num1, num2);
 
-double exp = (Math.Pow(num1, num2));
-
-Console.WriteLine ($"{num1}, {num2} -> {exp}");
+int Exponention (int exp, int numb1, int numb2)
+{
+    int count = 1;
+    while (count <= numb2)
+    {
+        exp = exp * numb1;
+        count ++;
+    }
+    return (exp);
+}
+Console.WriteLine ($"{num1}, {num2} -> {exponention}");
 
